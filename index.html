@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="alarm-container">
+            <h1 class="alarm-heading">Alarm</h1>
+            <form onsubmit="setAnAlarm(event)">
+                <input type="time" name="time" id="time" />
+                <input type='submit' value="Set" />
+            </form>
+            <button class="removeBtn btn" onclick="deleteAnAlarm()">
+                Remove Alarm
+            </button>
+            <button class="viewBtn btn" onclick="viewAlarm()">
+                View Alarm
+            </button>
+            <p id="alarm"></p>
+        </section>
+    </main>
+
+    <audio src="./alarm.wav" id="alarmSound"></audio>
+    <script src="./script.js"></script>
+</body>
+</html>

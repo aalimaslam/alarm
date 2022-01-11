@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;box-sizing: border-box;
+}
+body{
+    background:whitesmoke;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alarm-container{
+    padding: 20px;
+    background:white;
+    box-shadow:5px 5px 25px #ddd;
+}
+input{
+    padding:10px 30px;
+    background:transparent;
+    border:2px solid black;
+    border-radius: 3px;
+    outline:none;
+}
+h1{
+    padding:20px;
+    font-size:2rem;
+    text-align:center;
+}
+.btn{
+    padding:10px 30px;
+    margin:10px;
+    background:transparent;
+    border:2px solid black;
+    border-radius: 3px;
+    outline:none;
+    
+}
